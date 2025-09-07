@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <title>Redirect in corso...</title>
-  <script>
-    // Redirect automatico dopo 1 secondo (1000 ms)
-    setTimeout(function() {
-      window.location.href = "CartaSframeContatto.vcf";
-    }, 10);
-  </script>
+  <meta charset="UTF-8">
+  <title>Salva contatto</title>
 </head>
 <body>
-  <p>Se non vieni reindirizzato automaticamente, <a href="CartaSframeContatto.vcf">clicca qui</a>.</p>
+  <p>Se il contatto non appare automaticamente, <a href="data:text/vcard,MECARD:N:Marco Scarpelli Targhette;TEL:+393289086880;;">clicca qui</a> per salvarlo.</p>
+  <script>
+    // Prova a aprire automaticamente il contatto
+    window.location.href = "data:text/vcard,MECARD:N:Marco Scarpelli Targhette;TEL:+393289086880;;";
+  </script>
 </body>
 </html>
